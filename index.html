@@ -15,10 +15,10 @@
 
 <body>
   <!--Navigation Bar-->
-  <img src="media/logo.png" alt="" class="navLogo">
+  <a href="index.html"><img src="media/logo.png" alt="" class="navLogo"></a>
   <div class="topnav" id="myTopnav">
     <a href="contact.html" id="active" class="nava" style="margin-right: 15%;">Contact</a>
-    <a href="menu.html" class="nava">Menu</a>
+    <a href="menu.html" class="nava dropbtn">Menu</a>
     <a href="about.html" class="nava">About</a>
     <a href="index.html" class="nava">Home</a>
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -35,11 +35,12 @@
     <img class="mySlides" src="media/place1.png">
 
   </div>
+  <div class="splash1">
+    <h1 style="font-size: 5em;" class="splash2">Welcome to cafe Villa</h1>
+  </div>
 
   <div class="indexContainer">
-    <!-- <h1 style="text-align: center; font-size: 5em;">Welcome to Cafe Villa</h1> -->
     <div class="indexCollum1">
-      <h1 style="font-size: 5em;">Welcome to cafe Villa</h1>
       <img src="media/header6.jpg" width="100%;" alt="">
       <p>
         Café Villa is a memorable dining experience.
@@ -127,5 +128,17 @@
       }
     }
   </script>
+
+
+  <script>
+  $(document).ready(function(){
+  $("#menu li").hover(function(){
+    $(".dropdown-menu", this).slideDown(100);
+  }, function(){
+    $(".dropdown-menu", this).stop().slideUp(100);
+  });
+  })
+  </script>
+
 
 </body>

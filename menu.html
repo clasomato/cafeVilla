@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Cafe Villa</title>
+<meta name="description" content="A  FILL THIS OUTTTTT!!!!!!!!!!!!">
+<meta name="keywords" content="   ">
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" type="image/png" href="media/icon.png">
+</head>
+
+<body>
+  <!--Navigation Bar-->
+  <a href="index.html"><img src="media/logo.png" alt="" class="navLogo"></a>
+  <div class="topnav" id="myTopnav">
+    <a href="contact.html" id="active" class="nava" style="margin-right: 15%;">Contact</a>
+    <a href="menu.html" class="nava">Menu</a>
+    <a href="about.html" class="nava">About</a>
+    <a href="index.html" class="nava">Home</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <!-- This is the Font Awsome icon for mobile navigation -->
+    <i class="fa fa-bars"></i>
+    </a>
+  </div>
+  <div class="menuContainer">
+    <div class="col1">
+
+
+      <div class="menuItem">
+        <img src="media/menuItems/main1.jpg" alt="" class="menuImg">
+        <div class="menuText">
+          <h2>Beef Burger</h2>
+          <p>
+            a prime beef patty with caramelised onions, brie, beetroot and plum sauce, served with a side of salted wedges.
+          </p>
+          <h3>$22</h3>
+        </div>
+      </div>
+
+      <!-- Bacon and Avocado Gourmet Sandwich -->
+      <div class="menuItem">
+        <img src="media/menuItems/main4.jpg" alt="" class="menuImg">
+        <div class="menuText">
+          <h2>Bacon and Avocado Gourmet Sandwich</h2>
+          <p>
+            on toasted sourdough, Villa relish, tomato and mesclun Corn Fritters with bacon and sweet chilli sauce, and sour cream Bagel Special with cream cheese, bacon, tomato and spicy sauce. Salmon Scrambled eggs : Served on toasted sourdough Omelette Choose three fillings from: spinach, mushroom, ham, feta, onion, chorizo, tomato and cheese. Served with salad. with toast
+          </p>
+          <h3>$22</h3>
+        </div>
+      </div>
+
+      <div class="menuItem">
+        <img src="media/menuItems/main7.jpg" alt="" class="menuImg">
+        <div class="menuText">
+          <h2>Big Breakfast</h2>
+          <p>
+            bacon eggs, hashbrowns, tomato, mushroom and toasted sourdough
+          </p>
+          <h3>$24</h3>
+        </div>
+      </div>
+
+
+
+    </div>
+
+
+    <div class="col2">
+
+      <div class="menuItem">
+        <img src="media/menuItems/main2.jpg" alt="" class="menuImg">
+        <div class="menuText">
+          <h2>Gourmet Mushrooms</h2>
+          <p>
+            with bacon served on sourdough bread
+          </p>
+          <h3>$22</h3>
+        </div>
+      </div>
+
+      <div class="menuItem">
+        <img src="media/menuItems/main5.jpeg" alt="" class="menuImg">
+        <div class="menuText">
+          <h2>Salads</h2>
+          <p>
+            cajun chicken, served with orange yoghurt dressing and garlic bread
+          </p>
+          <h3>$21.50</h3>
+        </div>
+      </div>
+
+
+
+    </div>
+
+
+    <div class="col3">
+
+      <div class="menuItem">
+        <img src="media/menuItems/main3.jpg" alt="" class="menuImg">
+        <div class="menuText">
+          <h2>Lambs Fry</h2>
+          <p>
+            with bacon and onions in a port and cream sauce with toasted sourdough. Chicken Gourmet Sandwich on toasted sourdough, cajun chicken, spicy apricot sauce, brie and mesclun
+          </p>
+          <h3>$22</h3>
+        </div>
+      </div>
+
+      <div class="menuItem">
+        <img src="media/menuItems/main6.jpg" alt="" class="menuImg">
+        <div class="menuText">
+          <h2>Villa Pate</h2>
+          <p>
+            Our homemade pate with Villa relish, caramelised onions and toasted sourdough
+          </p>
+          <h3>$19</h3>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+
+
+
+  <!-- Javascript Area -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script>
+    var slideIndex = 0;
+    carousel();
+
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > x.length) {slideIndex = 1}
+      x[slideIndex-1].style.display = "block";
+      setTimeout(carousel, 2000); // Change image every 2 seconds
+    }
+  </script>
+
+
+
+
+  <script>
+    /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+      x.className = "topnav";
+      }
+    }
+  </script>
+
+</body>
