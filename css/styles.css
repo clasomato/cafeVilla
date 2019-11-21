@@ -127,8 +127,8 @@ h1, h2 {
 
 .mySlides {
   width: 100%;
-  -webkit-animation: flip-in-hor-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) forwards;
-	        animation: flip-in-hor-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) forwards;
+  -webkit-animation: flip-in-hor-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) forwards;
+	        animation: flip-in-hor-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) forwards;
 }
 
 /* Index */
@@ -239,12 +239,15 @@ h1, h2 {
   -webkit-box-shadow: 10px 10px 50px -41px rgba(0,0,0,0.39);
   -moz-box-shadow: 10px 10px 50px -41px rgba(0,0,0,0.39);
   box-shadow: 10px 10px 50px -41px rgba(0,0,0,0.39);
+
+  -webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 .menuItem:hover {
   -webkit-box-shadow: 10px 10px 50px -31px rgba(0,0,0,0.5);
--moz-box-shadow: 10px 10px 50px -31px rgba(0,0,0,0.5);
-box-shadow: 10px 10px 50px -31px rgba(0,0,0,0.5);
+  -moz-box-shadow: 10px 10px 50px -31px rgba(0,0,0,0.5);
+  box-shadow: 10px 10px 50px -31px rgba(0,0,0,0.5);
 }
 
 .menuImg {
@@ -258,7 +261,28 @@ box-shadow: 10px 10px 50px -31px rgba(0,0,0,0.5);
   margin-left: 5%;
 }
 
+.menuButton {
+  margin: auto;
+  text-decoration: none;
+  color: white;
+  font-size: 200%;
+  font-family: 'Lobster', cursive;
+}
 
+.menuButtonD {
+  width: 40%;
+  background-color: #BF4E77;
+  text-align: center;
+  margin: auto;
+  padding: 3% 5% 3% 5%;
+  margin-bottom: 4%;
+  border-radius: 1em 1em 1em 1em;
+}
+
+#menuactive {
+  background-color: #B71041;
+  padding: 4% 6% 4% 6%;
+}
 
 
 
@@ -288,6 +312,32 @@ box-shadow: 10px 10px 50px -31px rgba(0,0,0,0.5);
   100% {
     -webkit-transform: rotateX(0);
             transform: rotateX(0);
+    opacity: 1;
+  }
+}
+
+/* Entrance Effect For menu Items */
+@-webkit-keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
     opacity: 1;
   }
 }
