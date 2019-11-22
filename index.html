@@ -10,7 +10,7 @@
 <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="icon" type="image/png" href="media/icon.png">
+<link rel="icon" type="image/png" href="media/ico.png">
 </head>
 
 <body>
@@ -29,19 +29,19 @@
 
 
   <div class="full-width-slideshow">
-    <img class="mySlides" src="media/place1.png">
-    <img class="mySlides" src="media/place2.jpg">
-    <img class="mySlides" src="media/place3.jpg">
-    <img class="mySlides" src="media/place1.png">
+    <img class="mySlides" src="media/ss1.jpg">
+    <img class="mySlides" src="media/ss2.jpg">
+    <img class="mySlides" src="media/ss3.jpg">
+    <img class="mySlides" src="media/ss4.jpg">
 
   </div>
   <div class="splash1">
-    <h1 style="font-size: 5em;" class="splash2">Welcome to cafe Villa</h1>
+    <h1 class="splash2">Welcome to cafe Villa</h1>
   </div>
 
   <div class="indexContainer">
     <div class="indexCollum1">
-      <img src="media/header6.jpg" width="100%;" alt="">
+      <img src="media/header6.jpg" alt="" class="indexHeader">
       <p>
         Café Villa is a memorable dining experience.
         <br>
@@ -75,7 +75,7 @@
       <h2 style="font-size: 2em;">Job Openings</h2>
       <p>
         <strong>Trained Barista (2019)<br></strong>
-        We are looking for a trained barista with perferably 3 years of experience.
+        We are looking for an experienced barista that can make great coffee and do the front of house thing. We are wanting someone to start asap, so if you are looking to relocate to Wellington your timeframe will probably be too slow.
        </p>
 
        <hr>
@@ -90,6 +90,26 @@
 
 
 
+  </div>
+
+  <div class="footer">
+    <!-- Social Icons For The Footer -->
+    <div class="footerSocial">
+
+    </div>
+
+    <!-- Footer Navigation -->
+    <div class="footerNav">
+      <a href="index.html" class="navFooter">Home</a><br>
+      <a href="about.html" class="navFooter">About</a><br>
+      <a href="menu.html" class="navFooter">Menu</a><br>
+      <a href="contact.html" class="navFooter">Contact</a><br>
+    </div>
+
+    <!-- Footer Text -->
+    <div class="footerText">
+      <p style="color: #d3d3d3;">© 2019 Cafe Villa <br></p>
+    </div>
   </div>
 
 
@@ -110,7 +130,7 @@
       slideIndex++;
       if (slideIndex > x.length) {slideIndex = 1}
       x[slideIndex-1].style.display = "block";
-      setTimeout(carousel, 2000); // Change image every 2 seconds
+      setTimeout(carousel, 4000); // Change image every 2 seconds
     }
   </script>
 

@@ -114,6 +114,15 @@ h1, h2 {
   position: absolute;
   margin-top: 1%;
 }
+
+/* Mobile Optimization */
+@media screen and (max-width: 600px) {
+  .navLogo {
+    display: none;
+    padding-top: 0%;
+  }
+}
+
 /**NAvigation ENDS**/
 
 
@@ -123,6 +132,7 @@ h1, h2 {
   width: 100%;
   height: 79vh;
   overflow: hidden;
+  background-color: #B71041;
 }
 
 .mySlides {
@@ -130,6 +140,16 @@ h1, h2 {
   -webkit-animation: flip-in-hor-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) forwards;
 	        animation: flip-in-hor-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) forwards;
 }
+
+/* Mobile Optimization */
+@media screen and (max-width: 600px) {
+  .full-width-slideshow {
+    height: 22vh;
+  }
+}
+
+
+
 
 /* Index */
 .indexContainer {
@@ -173,6 +193,38 @@ h1, h2 {
 .splash2 {
   color: #F2F2F2;
   margin-left: 15%;
+}
+
+.indexHeader {
+  width: 100%;
+  border-radius: 0.5em;
+}
+
+/* Mobile Optimization */
+@media screen and (max-width: 600px) {
+  .indexContainer {
+    width: 90%;
+  }
+
+  .splash2 {
+    font-size: 2em;
+    margin-left: 5%;
+  }
+
+  .splash1 {
+    margin-bottom: 6%;
+  }
+
+  .indexCollum1 {
+    width: 100%;
+    float: none;
+  }
+
+  .indexCollum2 {
+    width: 100%;
+    float: none;
+    margin-bottom: 10%;
+  }
 }
 
 /* Index ENDS */
@@ -284,9 +336,93 @@ h1, h2 {
   padding: 4% 6% 4% 6%;
 }
 
+.mobileMenuNav {
+  display: none;
+}
+/* Mobile Optimization */
+@media screen and (max-width: 600px) {
+  .menuContainer {
+    width: 90%;
+  }
+
+  .col1 {
+    width: 100%;
+    float: none;
+  }
+
+  .col2 {
+    width: 100%;
+    float: none;
+  }
+
+  .col3 {
+    width: 100%;
+    float: none;
+  }
+
+  .mobileMenuNav {
+    display: inherit;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    width: 90%;
+  }
+}
 
 
 
+
+/* Footer */
+.footer {
+  width: 100%;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  background-color: #B71041;
+  overflow: auto;
+}
+
+.footerText {
+  float: left;
+}
+
+.footerSocial {
+  float: left;
+}
+
+.footerNav {
+  margin-left: 18%;
+  width: 10%;
+  padding-right: 0px;
+  margin-right: 0px;
+  float: left;
+}
+
+.navFooter {
+  float: left;
+  text-decoration: none;
+  color: white;
+  animation: icon_after 0.2s;
+  animation-fill-mode: forwards;
+}
+
+.navFooter:hover {
+  animation: icon 0.2s;
+  animation-fill-mode: forwards;
+}
+/*Footer ENDS*/
+
+@keyframes icon {
+  0% {color:#d3d3d3;}
+  100% {color:white;}
+}
+@keyframes icon_after {
+  0% {color:white;}
+  100% {color:#d3d3d3;}
+}
 
 
 /* Animations */
