@@ -16,16 +16,26 @@
 <body>
   <!--Navigation Bar-->
   <a href="index.html"><img src="media/logo.png" alt="" class="navLogo"></a>
-  <div class="topnav" id="myTopnav">
+  <div class="topnav desktopNav" id="myTopnav">
     <a href="contact.html" id="active" class="nava" style="margin-right: 15%;">Contact</a>
     <a href="menu.html" class="nava">Menu</a>
     <a href="about.html" class="nava">About</a>
     <a href="index.html" class="nava">Home</a>
+  </div>
+
+  <!-- Mobile Nav Bar -->
+  <div class="topnav mobileNav" id="myTopnavMobile">
+    <a href="index.html" class="nava">Home</a>
+    <a href="about.html" class="nava">About</a>
+    <a href="menu.html" class="nava dropbtn">Menu</a>
+    <a href="contact.html" class="nava" style="margin-right: 15%;">Contact</a>
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <!-- This is the Font Awsome icon for mobile navigation -->
     <i class="fa fa-bars"></i>
     </a>
   </div>
+
+
   <div class="menuContainer">
     <!-- Mobile Nav -->
     <div class="mobileMenuNav">
@@ -187,7 +197,7 @@
   <script>
     /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
     function myFunction() {
-        var x = document.getElementById("myTopnav");
+        var x = document.getElementById("myTopnavMobile");
       if (x.className === "topnav") {
         x.className += " responsive";
       } else {

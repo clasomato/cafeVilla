@@ -115,11 +115,26 @@ h1, h2 {
   margin-top: 1%;
 }
 
+.mobileNav {
+  display: none;
+}
 /* Mobile Optimization */
 @media screen and (max-width: 600px) {
   .navLogo {
     display: none;
     padding-top: 0%;
+  }
+
+  .desktopNav {
+    display: none;
+  }
+
+  .mobileNav {
+    display: inherit;
+  }
+
+  .topnav a {
+    margin-top: 0%;
   }
 }
 
@@ -137,9 +152,41 @@ h1, h2 {
 
 .mySlides {
   width: 100%;
-  -webkit-animation: flip-in-hor-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) forwards;
-	        animation: flip-in-hor-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) forwards;
+  /* -webkit-animation: flip-in-hor-bottom 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) forwards;
+	        animation: flip-in-hor-bottom 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) forwards; */
 }
+
+.fade {
+  -webkit-animation: fade 4s;
+  animation: fade 4s;
+  -moz-animation: fade 4s;
+  -o-animation: fade 4s;
+}
+
+@-webkit-keyframes fade {
+0% {opacity: 0}
+50% {opacity: 1}
+100% {opacity:0}
+}
+
+@-moz-keyframes fade{
+    0% {opacity: 0}
+  50% {opacity: 1}
+  100% {opacity:0}
+}
+
+@keyframes fade {
+  0% {opacity: 0}
+  50% {opacity: 1}
+  100%{opacity: 0}
+    }
+@-o-keyframes fade {
+0% {opacity: 0}
+  50% {opacity: 1}
+  100%{opacity: 0}
+
+}
+
 
 /* Mobile Optimization */
 @media screen and (max-width: 600px) {
@@ -435,11 +482,11 @@ h1, h2 {
 
 /* Animations */
 /* Animation for slideshows */
-@-webkit-keyframes flip-in-hor-bottom {
+/* @-webkit-keyframes flip-in-hor-bottom {
   0% {
     -webkit-transform: rotateX(80deg);
             transform: rotateX(80deg);
-    opacity: 0;
+    opacity: 0.2;
   }
   100% {
     -webkit-transform: rotateX(0);
@@ -451,7 +498,20 @@ h1, h2 {
   0% {
     -webkit-transform: rotateX(80deg);
             transform: rotateX(80deg);
-    opacity: 0;
+    opacity: 0.2;
+  }
+  100% {
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+    opacity: 1;
+  }
+} */
+
+@-webkit-keyframes flip-in-hor-bottom {
+  0% {
+    -webkit-transform: rotateX(80deg);
+            transform: rotateX(80deg);
+    opacity: 0.2;
   }
   100% {
     -webkit-transform: rotateX(0);
@@ -459,6 +519,31 @@ h1, h2 {
     opacity: 1;
   }
 }
+
+@keyframes flip-in-hor-bottom {
+  0% {
+    -webkit-transform: rotateX(80deg);
+            transform: rotateX(80deg);
+    opacity: 0.2;
+  }
+  100% {
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes flip-in-hor-botom-exit {
+  0% {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+  }
+  100% {
+    -webkit-transform: rotateX(80deg);
+            transform: rotateX(80deg);
+  }
+}
+
 
 /* Entrance Effect For menu Items */
 @-webkit-keyframes scale-in-center {
