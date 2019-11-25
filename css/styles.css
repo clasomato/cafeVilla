@@ -428,6 +428,7 @@ h1, h2 {
   width: 70%;
   margin: auto;
   text-align: center;
+  padding-bottom: 8%;
 }
 
 input[type=text] {
@@ -469,6 +470,29 @@ textarea {
   width: 40%;
   font-family: 'Noto Sans', sans-serif;
 }
+
+/* Mobile Optimization */
+@media screen and (max-width: 600px) {
+  .contactContainer {
+    width: 90%;
+  }
+
+  input[type=text] {
+    width: 90%;
+    padding: 16px 32px;
+  }
+
+  input[type=text]:focus {
+    width: 100%;
+  }
+
+  textarea {
+    width: 90%;
+    height: 20%;
+    font-family: 'Noto Sans', sans-serif;
+  }
+}
+
 
 
 
